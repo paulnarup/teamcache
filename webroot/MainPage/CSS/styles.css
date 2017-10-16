@@ -73,10 +73,6 @@ ul {
     margin: 20px;
 }
 
-.pointerHand{
-    cursor: pointer;
-}
-
 .projectCard{
     background: #0066ff;
     border-color: white;
@@ -107,6 +103,42 @@ ul {
 
 .centerThis{
     align-content: center;
+}
+
+.twoColumnWraper{
+    display: grid;
+    grid-template-columns: 100px 100px;
+    grid-gap:10px;
+    grid-auto-rows:auto;
+}
+
+.twoColumnBox{
+    width:150px;
+}
+/*tc prefix means that it is for a two column grid*/
+.tc_one{
+    grid-column:1;
+    grid-row:1;
+}
+.tc_two{
+    grid-column:2;
+    grid-row:1;
+}
+.tc_three{
+    grid-column:1;
+    grid-row:2
+}
+.tc_four{
+    grid-column:2;
+    grid-row:2;
+}
+.tc_five{
+    grid-column:1/2;
+    grid-row:3;
+}
+.tc_six{
+    grid-column:1/2;
+    grid-row:4;
 }
 
 /*CSS grid*/
@@ -160,3 +192,12 @@ ul {
     color: white;
     text-decoration: none;
   }
+
+  /*For project creation screen*/
+  .box__dragndrop,
+  .box__uploading,
+  .box__success,
+  .box__error {
+    display: none;
+  }
+  /*End project creation screen*/
